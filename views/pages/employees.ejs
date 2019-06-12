@@ -1,0 +1,114 @@
+<% layout('../layouts/header') -%>
+<section class="hero is-fullheight-with-navbar has-background-white" id="about" style="overflow: hidden;">
+	<div class="hero-body">
+		<div class="container has-text-black">
+			<h1 class="title is-size-1 has-text-weight-bold has-text-black has-text-centered" style="margin-top: 32px;" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
+				CRUD
+			</h1>
+			<div class="columns is-centered">
+				<div class="column has-text-centered" data-aos="fade-right" data-aos-delay="140" data-aos-duration="500">
+					<h2 class="subtitle is-size-3 has-text-black">
+						Add Employees
+					</h2>
+					<form action="/employees" method="POST">
+						<div class="field">
+							<div class="user">
+								<input class="input is-large" name="username" type="text" placeholder="Username*" pattern="[A-Za-z].{4,}"  autofocus="">
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="pass">
+								<input class="input is-large" name="password" type="password" placeholder="Password*" pattern="[A-Za-z].{5,36}">
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="pass2">
+								<input class="input is-large" name="pass2" type="password" placeholder="Re-Type Password*" pattern="[A-Za-z].{5,}">
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="email">
+								<input class="input is-large" name="email" type="email" placeholder="Email*">
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="firstname">
+								<input class="input is-large" name="firstName" type="text" placeholder="First Name">
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="lastname">
+								<input class="input is-large" name="lastName" type="text" placeholder="Last Name">
+							</div>
+						</div>
+
+						<div class="field">
+							<div class="control">
+						    	<div class="select is-large">
+						    		<select name="accountType">
+						    			<option value="Admin">Admin</option>
+						    			<option value="Employee">Employee</option>
+						      		</select>
+						    	</div>
+						  	</div>
+						</div>
+
+						<button class="button is-block is-info is-large is-fullwidth" name="submit">Submit</button>
+					</form>
+				</div>
+
+				<div class="column has-text-centered" data-aos="fade-left" data-aos-delay="140" data-aos-duration="500">
+					<h2 class="subtitle is-size-3 has-text-black">
+						Employees
+					</h2>
+					<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
+                        <thead>
+                        	<tr>
+                                <th>Username</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Email</th>
+                                <th>Account Type</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <!-- <tfoot>
+                        	<tr>
+                                <th>Username</th>
+                                <th>Email</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Account Type</th>
+                                <th>Action</th>
+                            </tr>
+                        </tfoot> -->
+                        <tbody>
+                        	<tr>
+                        		<th>1</th>
+                        		<th>1</th>
+                        		<th>1</th>
+                        		<th>1</th>
+                        		<th>1</th>
+                        		<th>1</th>
+                        	</tr>
+                        	<tr>
+                        		<th>1</th>
+                        		<th>1</th>
+                        		<th>1</th>
+                        		<th>1</th>
+                        		<th>1</th>
+                        		<th>1</th>
+                        	</tr>
+                        </tbody>
+                    </table>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</section>
