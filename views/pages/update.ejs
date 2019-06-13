@@ -3,12 +3,12 @@
 	<div class="hero-body">
 		<div class="container has-text-black">
 			<h1 class="title is-size-1 has-text-weight-bold has-text-black has-text-centered" style="margin-top: 32px;" data-aos="fade-right" data-aos-delay="150" data-aos-duration="500">
-				CRUD
+				Update
 			</h1>
 			<div class="columns is-centered">
 				<div class="column has-text-centered" data-aos="fade-right" data-aos-delay="140" data-aos-duration="500">
 					<h2 class="subtitle is-size-3 has-text-black">
-						Add Employees
+						Update Employee
 					</h2>
 					<form action="/employees" method="POST">
 						<div class="field">
@@ -60,39 +60,6 @@
 
 						<button class="button is-block is-info is-large is-fullwidth" name="submit">Submit</button>
 					</form>
-				</div>
-
-				<div class="column has-text-centered" data-aos="fade-left" data-aos-delay="140" data-aos-duration="500">
-					<h2 class="subtitle is-size-3 has-text-black">
-						Employees
-					</h2>
-					<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
-                        <thead>
-                        	<tr>
-                                <th>Username</th>
-                                <th>First Name</th>
-                                <th>Last Name</th>
-                                <th>Email</th>
-                                <th>Account Type</th>
-                                <th>Action</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                        	<% for(var i=0; i < employees.length; i++) { %>
-							<tr>
-								<td><%= employees[i].username %></td>
-								<td><%= employees[i].firstName %></td>
-								<td><%= employees[i].lastName %></td>
-								<td><%= employees[i].email %></td>
-								<td><%= employees[i].accountType %></td>
-								<td>
-									<a class="button is-normal has-background-success is-fullwidth">Edit</a>
-									<a class="button is-normal has-background-danger is-fullwidth">Delete</a>
-								</td>
-							</tr>
-							<% } %>
-                        </tbody>
-                    </table>
 				</div>
 			</div>
 		</div>
