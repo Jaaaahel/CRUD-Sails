@@ -10,40 +10,28 @@
 					<h2 class="subtitle is-size-3 has-text-black">
 						Update Employee
 					</h2>
-					<form action="/employees" method="POST">
+					<form action="/update/<%= employees.id %>" method="POST">
 						<div class="field">
 							<div class="user">
-								<input class="input is-large" name="username" type="text" placeholder="Username*" pattern="[A-Za-z].{4,}"  autofocus="">
-							</div>
-						</div>
-
-						<div class="field">
-							<div class="pass">
-								<input class="input is-large" name="password" type="password" placeholder="Password*" pattern="[A-Za-z].{5,36}">
-							</div>
-						</div>
-
-						<div class="field">
-							<div class="pass2">
-								<input class="input is-large" name="pass2" type="password" placeholder="Re-Type Password*" pattern="[A-Za-z].{5,}">
+								<input class="input is-large" name="username" type="text" placeholder="Username*" pattern="[A-Za-z].{4,}"  autofocus="" value="<%= employees.username %>">
 							</div>
 						</div>
 
 						<div class="field">
 							<div class="email">
-								<input class="input is-large" name="email" type="email" placeholder="Email*">
+								<input class="input is-large" name="email" type="email" placeholder="Email*" value="<%= employees.email %>">
 							</div>
 						</div>
 
 						<div class="field">
 							<div class="firstname">
-								<input class="input is-large" name="firstName" type="text" placeholder="First Name">
+								<input class="input is-large" name="firstName" type="text" placeholder="First Name" value="<%= employees.firstName %>">
 							</div>
 						</div>
 
 						<div class="field">
 							<div class="lastname">
-								<input class="input is-large" name="lastName" type="text" placeholder="Last Name">
+								<input class="input is-large" name="lastName" type="text" placeholder="Last Name" value="<%= employees.lastName %>">
 							</div>
 						</div>
 

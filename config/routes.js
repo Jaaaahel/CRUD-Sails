@@ -22,6 +22,12 @@ module.exports.routes = {
   '/employees': { action: 'Employee/index' },
   'POST /employees': { action: 'Employee/add' },
 
+  'GET /employees/:id': { action: 'Employee/edit' },
+  'POST /update/:id': { action: 'Employee/update' },
+
+  'GET /destroy/:id': { action: 'Employee/delete' },
+  'POST /destroy/:id': { action: 'Employee/destroy' },
+
 
   /***************************************************************************
   *                                                                          *
@@ -30,7 +36,7 @@ module.exports.routes = {
   *                                                                          *
   * If a request to a URL doesn't match any of the routes in this file, it   *
   * is matched against "shadow routes" (e.g. blueprint routes).  If it does  *
-  * not match any of those, it is matched against static assets.             *
+  * not match any of those, it is matched against stastic assets.             *
   *                                                                          *
   ***************************************************************************/
 

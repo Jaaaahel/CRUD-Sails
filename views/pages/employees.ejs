@@ -86,8 +86,8 @@
 								<td><%= employees[i].email %></td>
 								<td><%= employees[i].accountType %></td>
 								<td>
-									<a class="button is-normal has-background-success is-fullwidth">Edit</a>
-									<a class="button is-normal has-background-danger is-fullwidth">Delete</a>
+									<a class="button is-normal has-background-success is-fullwidth" href="/employees/<%= employees[i].id %>">Edit</a>
+									<a class="button is-normal has-background-danger is-fullwidth" href="/destroy/<%= employees[i].id %>">Delete</a>
 								</td>
 							</tr>
 							<% } %>
